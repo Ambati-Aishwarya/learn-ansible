@@ -23,3 +23,32 @@ ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=De
 Ansible is all about modules (from version 2.8, we are referring them as collections )
 if we go with the manual way of running these commands we can run one command at a time
 
+in our case we need to unstall ngnix start the service and download the package
+ ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.package ngnix
+
+ ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.systemd_service ngnix
+
+ nsible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.grt_url ngnix http://syxzz/d
+
+ running commands manually is not a great way and not a right approach to handle.
+
+ the right approach to handle ansible is using playbooks(ansible scripts)
+
+ to do automation using ansible we achieve it using PLAYBOOKS. Playbooks are written using YAML language
+ learning yaml is very easy
+ YAML is all about 
+   
+   . Dictionary: a key with single value is referred as Dictionary
+     a=10
+     .lists: a key with multiple value is referred as list
+     courses:
+          - python
+          - jsvs
+          - nodejs
+
+ in ansible what is aplaybook?
+ a playbook is nothing but list of plays 
+ a play is nothing but list of tasks
+ a task is nothing but list of actions
+          
+
