@@ -15,6 +15,10 @@ all is default group on this file that includes everything on the file.
 
 running ansible commands manually:
 
+if we execute the commands manually, we can execute one command at a time
+
 $ ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.shell -a uptime
+ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.ping
+
 Ansible is all about modules (from version 2.8, we are referring them as collections )
 
