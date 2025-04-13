@@ -21,4 +21,5 @@ $ ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=
 ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.ping
 
 Ansible is all about modules (from version 2.8, we are referring them as collections )
+if we go with the manual way of running these commands we can run one command at a time
 
