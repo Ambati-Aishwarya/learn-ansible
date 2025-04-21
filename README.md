@@ -17,8 +17,8 @@ running ansible commands manually:
 
 if we execute the commands manually, we can execute one command at a time
 
-$ ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.shell -a uptime
-ansible -i inventoryFileName all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.ping
+$ ansible -i inv all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.shell -a uptime
+ansible -i inv all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.ping
 
 Ansible is all about modules (from version 2.8, we are referring them as collections )
 if we go with the manual way of running these commands we can run one command at a time
@@ -50,5 +50,8 @@ in our case we need to unstall ngnix start the service and download the package
  a playbook is nothing but list of plays 
  a play is nothing but list of tasks
  a task is nothing but list of actions
-          
+
+ how to run a ansible playbook ?
+ $ ansible-playbook -i inv -e ansible-user=ec2-user -e ansible-password=DevOps321 playBookname.yml
+
 
