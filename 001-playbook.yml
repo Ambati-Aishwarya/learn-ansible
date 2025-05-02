@@ -3,5 +3,8 @@
   tasks:
     - name: task1 of play 1
       ansible.builtin.debug:
-      msg: "hello world"
-      
+       msg: "hello world"
+    - name: task2 of play 1
+      ansible.builtin.debug:
+       msg: "hello Ansible playbooks"
+        
